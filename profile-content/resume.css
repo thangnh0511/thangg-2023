@@ -56,9 +56,9 @@
     display: block;
     font-size: 20px;
     width: 120px;
-    padding: 5px 5px;
+    padding: 0px 5px;
     margin: 5px;
-    border-radius: 8px;
+    border-radius: 6px;
     text-decoration: none;
     cursor: pointer;
     display: flex; 
