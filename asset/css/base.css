@@ -254,7 +254,7 @@ section {
     color: var(--black-color);
     font-size: 24px;
     display: block;
-    width: 150px;
+    width: 120px;
 }
 
 .back-btn:hover {
