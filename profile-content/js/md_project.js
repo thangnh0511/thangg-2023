@@ -360,7 +360,6 @@ function verifyCodeResume() {
             <button type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal">Close</button>
             <a type='button' class="btn btn-dark btn-lg" href='https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10'>Download</a>
               </div>
-            
         `
     } else {
         content = `
