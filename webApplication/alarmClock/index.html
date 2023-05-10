@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thangg. | Sleep Cycle</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link rel="stylesheet" href="./style-colorful.css">
+    <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/img%2Flogo-2-1%20copy%202.png?alt=media&token=49e9ce8d-67a4-44d2-8255-46588fd7ec17">
+
+</head>
+<body>
+    
+    <div class="container">
+        <label for="number" class="webAppTitle">Sleep Cycle Tool</label>
+        <div class="information-box">
+            <h2 class="information-title">What Is the Sleep Cycle?</h2>
+            <p class="information-body">Sleep is not uniform. Instead, over the course of the night, your total sleep is made up of several rounds of the sleep cycle, which is composed of four individual stages. In a typical night, a person goes through four to six sleep cycles1. Not all sleep cycles are the same length, but on average they last about 90 minutes each.</p>
+            <a class="information-link" href="https://www.sleepfoundation.org/how-sleep-works/stages-of-sleep">Stages of Sleep          </a>
+        </div>
+        <!-- Input Time -->
+        <div class="value-box">
+            <div class="input-data">
+                <label for="hour" class="label">Enter Sleep Time</label>
+                <div class="data-box">
+                    <div class="input">
+                        <input type="text" placeholder="HOUR" class="input-field desktop" maxlength="2" id="hour" onkeyup="checkInput(1)" required >
+                        <!-- <ul class="select-box" id="hour-select-box">
+                            <li class="option">1</li>
+                            <li class="option">2</li>
+                            <li class="option">3</li>
+                        </ul> -->
+
+                        <!-- Mobile hour -->
+                        <label for="" class="mobile">Hour</label>
+                        <select name="" id="hour-mobile" class="input-field mobile" onkeyup="checkInputMobile(7)" required>
+                          
+                        </select>
+
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="MINUTE" class="input-field desktop" maxlength="2" id="minute" onkeyup="checkInput(2)" required >
+                    
+                        <label for="" class="mobile">Minute</label>
+                        <select name="" id="minute-mobile" class="input-field mobile" onkeyup="checkInputMobile(8)" required>
+                           
+                        </select>
+                    </div>
+                    <div class="input">
+                        <input type="text" placeholder="PERIOD" class="input-field desktop" id="period" onkeyup="alternateInput()" readonly required>
+                        <ul class="select-box" id="period-select-box">
+                            <li class="option" onmouseenter="selectOption(3,'AM')">AM</li>
+                            <li class="option" onmouseenter="selectOption(3,'PM')">PM</li>
+                        </ul>
+
+                        <!-- Mobile Period -->
+                        <label for="period-mobile" class="mobile">Period</label>
+                        <select name="" id="period-mobile" class="input-field mobile" onclick="mobileSelect(5)" required>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="input-data">
+                <label for="number" class="label">Cycle</label>
+                <div class="data-box">
+                    <div class="input">
+                        <!-- <input type="text"> -->
+                        <input type="text" placeholder="NUMBER" class="input-field desktop" id="cycle" readonly required>
+                        <label for="" class="mobile">Number</label>
+                        <ul class="select-box" id="number-select-box">
+                            <li class="option" onmouseenter="selectOption(4,1)">1</li>
+                            <li class="option" onmouseenter="selectOption(4,2)">2</li>
+                            <li class="option" onmouseenter="selectOption(4,3)">3</li>
+                            <li class="option" onmouseenter="selectOption(4,4)">4</li>
+                            <li class="option" onmouseenter="selectOption(4,5)">5</li>
+                            <li class="option" onmouseenter="selectOption(4,6)">6</li>
+                        </ul>
+
+                        <select name="" id="cycle-mobile" class="input-field mobile" onclick="mobileSelect(6)" required>
+                            <!-- <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Value Time -->
+        <div class="value-box">
+            <div class="input-data">
+                <label for="hour" class="label">TIME TO AWAKE</label>
+                <div class="data-box result-area">
+                    <div class="output-field desktop" id="outHour">Time</div>
+                    <div class="output-field desktop" id="outMinute">To</div>
+                    <div class="output-field desktop" id="outPeriod">Awake</div>
+
+                    <div class="output-field mobile" id="outHour-mobile">Time</div>
+                    <div class="output-field mobile" id="outMinute-mobile">To</div>
+                    <div class="output-field mobile" id="outPeriod-mobile">Awake</div>
+
+                    <!-- <input type="text" placeholder="HOUR" class="input-field" readonly>
+                    <input type="text" placeholder="MINUTE" class="input-field" readonly>
+                    <input type="text" placeholder="PERIOD" class="input-field" readonly> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./alarmClock.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --theme-color-1: #E63946;
+    --theme-color-2: #F1FAEE;
+    --theme-color-3: #A8DADC;
+    --theme-color-4: #457B9D;
+    --theme-color-5: #1D3557;
+    --font: 'Josefin Sans', sans-serif;
+    --background-1 : linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+        background-blend-mode: multiply,multiply;
+    --background-2 : linear-gradient(to top, #dfe9f3 0%, white 100%);
+    --background-3 : linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    --background-4 : linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    --background-5 : linear-gradient(60deg, #29323c 0%, #485563 100%);
+    --background-6 : linear-gradient(121deg, #74EBD5 0%, #9FACE6 100%);
+    --background-7 : linear-gradient(123deg, #8EC5FC 0%, #E0C3FC 100%);
+    --background-8-winter-neva: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    --background-9-everlasting-sky: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    --background-10-saint-petersburg: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+    --background-11-deep-blue: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    --background-12-fly-high: linear-gradient(135deg, #48c6ef 0%, #6f86d6 100%);
+    --background-13-strong-bliss: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+    --background-14-glass-water: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    --color-red : #EE6055;
+    --color-green : #60D394;
+    --color-yellow : #FFD97D;
+    --color-black : #2B2D42;
+    --color-gray-1: #e9ecef;
+
+    --primary-1: #3A0CA3;
+    --primary-2: #4361EE;
+    --primary-3: #4CC9F0;
+
+    --font-color-gray: #2B2D42;
+
+    --boxShadow-1:  rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    --boxShadow-material-1: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    --boxShadow-material-2: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    --boxShadow-spotify-1: rgba(33, 35, 38, 0.1) 10px 10px 10px -1px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--background-9-everlasting-sky);
+}
+
+.black-color {
+    background-color: var(--black-color);
+}
+
+.white-color {
+    background-color: var(--white-color);
+}
+
+.home-background {
+    background: var(--background-2);
+}
+
+.bg-glass-water {
+    background: var(--background-14-glass-water) !important;
+}
+
+.background-winter-neva {
+    background: var(--background-8-winter-neva);
+}
+.bg-saint-petersburg {
+    background: var(--background-10-saint-petersburg);
+}
+.bg-deep-blue {
+    background: var(--background-11-deep-blue);
+    /* background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
+}
+.bg-fly-high {
+    background: var(--background-12-fly-high);
+}
+.bg-strong-bliss {
+    background: var(--background-13-strong-bliss);
+}
+.bg-dusty-grass {
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.bg-rare-wind {
+    background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.bg-blessing { 
+    background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+}
+
+.background-7 {
+    background: var(--background-7);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: title-font;
+    src: url(../font/svn-gilroy/SVN-Gilroy\ Black.otf);
+}
+
+@font-face {
+    font-family: sub-title-font;
+    src: url(../font/svn-gilroy/SVN-Gilroy\ SemiBold.otf);
+}
+
+@font-face {
+    font-family: text-font;
+    src: url(../font/svn-gilroy/SVN-Gilroy\ Light.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* font-family: text-font; */
+    font-family: var(--font);
+    box-sizing: border-box;
+}
+
+p, a, span {
+    /* font-family: text-font; */
+    font-family: var(--font);
+    color: #1D3557;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5 {
+    /* font-family: title-font; */
+    font-family: var(--font);
+    color: #1D3557;
+}
+
+body {
+    /* background: var(--theme-color-2) !important; */
+    /* background: url('../img/pattern/cartographer/cartographer.png'); */
+    background: var(--background-2);
+    width: 100%;
+    user-select: none;
+}
+div {
+    font-family: var(--font);
+}
+
+.px-10-p {
+    padding: 0px 10% !important;
+}
+
+.width-100 {
+    width: 100% !important;
+}
+
+.fs-16 { font-size: 16px !important;}
+.fs-18 { font-size: 18px !important;}
+.fs-36 { font-size: 36px !important;}
+
+
+
+/* -------- MAIN LAYOUT */
+.main {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* -------- GRID LAYOUT */
+
+/* .grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+
+
+/* ----- layout for sub container ------*/
+
+.grid {
+    width: 100%;
+    display: grid;
+}
+
+.grid_row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* ------ Section --------- */
+
+section {
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+
+.section-header {
+    min-height: 120px;
+    text-align: center;
+    font-size: 36px;
+    font-family: var(--font);
+    letter-spacing: 2px;
+    /* font-family: 'Hahmlet', serif; */
+    /* font-family: 'Merriweather', serif; */
+    font-weight: bolder;
+    color: var(--theme-color-5);
+    position: relative;
+}
+
+
+.section-header p {
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    top: 39%;
+    left: 40%; right: 100%;
+    height: 5px;
+    background:  var(--theme-color-1);
+    transition:  .5s;
+}
+
+.section-header:hover::before {
+    right: 40%;
+}
+
+
+/* navbar button */
+.back-btn { 
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 24px;
+    display: block;
+    width: 150px;
+}
+
+.back-btn:hover {
+    color: var(--black-color);
+    cursor: pointer;
+}
+

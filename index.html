@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thangg. | Resume</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="https://firebasestorage.googleapis.com/v0/b/personal-profile-32045.appspot.com/o/img%2Flogo-2-1%20copy%202.png?alt=media&token=49e9ce8d-67a4-44d2-8255-46588fd7ec17">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/style-content.css">
+    <link rel="stylesheet" href="profile-content/resume.css">
+    <link rel="stylesheet" href="profile-content/css/resumeVer2.css">
+    <link rel="stylesheet" href="profile-content/css/tab.css">
+    <link rel="stylesheet" href="profile-content/css/timeline.css">
+    <link rel="stylesheet" href="profile-content/css/timeline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+   
+    <!-- Icon -->
+    <link rel="stylesheet" href="asset/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <!-- Boostrap CSS only -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- MDB -->
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+    rel="stylesheet"
+    />
+
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+    ></script>
+
+</head>
+<body>
+    <div class="resume-main container px-md-10-p">
+        <header id="_002-h" class="resume-header white-color"> </header>
+
+        <div class="resume-body">
+
+            <header id="_001-h" class="resume-content-title"></header>
+            <div class="tabs">
+                <a class="tab-item active" onclick="requestIdleCallback()">
+                  <i class="tab-icon fas fa-user"></i>
+                  Overview
+                </a>
+                <a class="tab-item" onclick="requestIdleCallback()">
+                  <i class="tab-icon fas fa-briefcase"></i>
+                  Experiences
+                </a>
+                <a class="tab-item" onclick="verifyCode()">
+                  <i class="tab-icon fas fa-plus-circle"></i>
+                  Projects
+                </a>
+                <a class="tab-item" onclick="requestIdleCallback()">
+                    <i class="tab-icon fas fa-pen-nib"></i>
+                  References
+                </a>
+                <div class="line"></div>
+              </div>
+
+
+
+            <div class="resume-content-main">
+                <div id="_sum" class="tab-pane active">
+                    <div id="_summary" class="col-12 text-center"></div>
+                    <div class="flex-box row">
+                        <div class="col-12 col-lg-6">
+                            <div class="rsm2_block">
+                                <div class="rsm2_title">
+                                    Education
+                                </div>
+                                <div class="rsm2_font__subTitle">
+                                    Bachelor of Management Information System (2015-2019)
+                                </div>
+                                <div class="rsm2_font__boxTitle">DA NANG UNIVERSITY OF ECONOMIC, VIETNAM</div>
+                            </div>
+                            <div id="_languages" class="rsm2_block"></div>
+                            <div id="_technical" class="rsm2_block"></div>
+                        </div>
+                        <div class="flex-box col-6">
+                            <div id="_certificate" class="rsm2_block"></div>
+                            <div id="_hobbies" class="rsm2_block"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Experiences -->
+                <div id="_exp" class="tab-pane">
+                    <h1 class="rsm2_title">Experiences</h1>
+                </div>
+                <!-- End - Experiences -->
+                <div id="_pro" class="tab-pane">
+                    <h1 class="rsm2_title">Projects</h1>
+                    <div class="accordion accordion-borderless" id="projectList">                 
+                        <div class="formCode">
+                            <p>Contact me to get the code if you want to read this content, Thank you!
+                            </p>
+                            <input type="number" class="form-control" id="verifyCode" aria-describedby="emailHelp" placeholder="Enter Verify Code" >
+                            <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCode()">Show Content</button>
+                        </div>
+                      </div>
+                </div>
+                <div id="_ref" class="tab-pane">
+                    <h1 class="rsm2_title">References</h1>
+                    <div class="notify">
+                        <div>
+                            <img class="" src="asset/img/working.png" alt="">
+                        </div>
+                        <h3>Oops! There's no content now. It will be updated soon</h3>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <footer id="_footer" class="rsm__footer">
+            
+            </footer>
+        </div>
+    </div>
+
+    <footer class="footer  p-5">
+        <p>Design & Build by Thangg</p> 
+    </footer>   
+    
+
+    <script src="./asset/javascript/button.js"></script>
+    <!-- <script type="module" src="./dataLoading.js"></script> -->
+    <script type="module" src="./profile-content/js/md_header.js"></script>
+    <script type="module" src="./profile-content/js/md_overview.js"></script>
+    <script type="module" src="./profile-content/js/md_experience.js"></script>
+    <script src="./profile-content/js/md_project.js"></script>
+    <script src="./profile-content/app.js"></script>
+</body>
+</html>
