@@ -535,7 +535,5 @@ var md5 = function (string) {
     return temp.toLowerCase();
 }
 
-console.log(md5('30041975'))
-
 // console.log(DATA_PROJECTS)
 // console.log(DATA_PROJECTS_RES)
