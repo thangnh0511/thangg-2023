@@ -137,6 +137,23 @@
         </div>
     </div>
 
+    <div class="modal fade" id="resumeModal" aria-hidden="true" aria-labelledby="resumeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content" id="resume-view">
+            <div class="modal-header">
+              <h2 class="modal-title" id="exampleModalToggleLabel">Download Resume</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="resume-file">
+                <div class="formCode">
+                    <input type="number" class="form-control" id="verifyCodeResume" aria-describedby="number" placeholder="Enter Verify Code" >
+                    <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCodeResume()">Show Content</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer class="footer  p-5">
         <p>Design & Build by Thangg</p> 
     </footer>   
