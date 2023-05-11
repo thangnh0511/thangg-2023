@@ -334,12 +334,22 @@ function displayPro() {
 
 function verifyCode() {
     // let code = prompt('Please Enter Code:')
+    let dom = document.getElementById('projectList')
+    let content =''
     let verifyCode = document.getElementById('verifyCode').value
     if(md5(verifyCode) == '1134f6800908febcf78cba9e036acd20') {
         displayPro()
     } else {
-        alert('Wrong Code, Please try again !')
+        // alert('Wrong Code, Please try again !')
+        content=`<div class="formCode box-shadow">
+        <p>Contact me to get the code if you want to read this content, Thank you!
+        </p>
+        <input type="number" class="form-control invalid-input-box" id="verifyCode" aria-describedby="passCode" placeholder="Enter Verify Code">
+        <p class="invalid-input-text">Wrong Code, Please try again !!!</p>
+        <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCode()">Show Content</button>
+        </div>`
     }
+    dom.innerHTML = content
 }
 
 function verifyCodeResume() {
@@ -354,12 +364,13 @@ function verifyCodeResume() {
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
         <div class="modal-body" id="resume-file">
-        <embed src="https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10#toolbar=0" width="100%" height="500px" type="application/pdf">
+            <embed src="https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10#toolbar=0" width="100%" height="500px" type="application/pdf">
         </div>
         <div class="modal-footer" id="resume-download">
             <button type="button" class="btn btn-outline-dark btn-lg" data-bs-dismiss="modal">Close</button>
-            <a type='button' class="btn btn-dark btn-lg" href='https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10'>Download</a>
+            <a role='button' class="btn btn-dark btn-lg" href='https://firebasestorage.googleapis.com/v0/b/porfolio-c82b8.appspot.com/o/file%2FCV-NguyenHuuThang-2023.pdf?alt=media&token=422d962b-0c80-4665-9b40-f4665b944a10'>Download</a>
               </div>
+            
         `
     } else {
         content = `
@@ -369,8 +380,8 @@ function verifyCodeResume() {
             </div>
             <div class="modal-body" id="resume-file">
                 <div class="formCode" id="form-code">
-                    <input type="number" class="form-control" id="verifyCodeResume" aria-describedby="number" placeholder="Enter Verify Code" >
-                    <p style='color: red'>Wrong Code, Please try again !!!</p>
+                    <input type="number" class="form-control invalid-input-box" id="verifyCodeResume" aria-describedby="number" placeholder="Enter Verify Code" >
+                    <p class='invalid-input-text'>Wrong Code, Please try again !!!</p>
                     <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCodeResume()">Show Content</button>
                 </div>
             </div>
