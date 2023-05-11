@@ -348,8 +348,8 @@ function verifyCode() {
         <p class="invalid-input-text">Wrong Code, Please try again !!!</p>
         <button type="button" class="btn btn-dark" id="verifyButton" onclick="verifyCode()">Show Content</button>
         </div>`
+        dom.innerHTML = content
     }
-    dom.innerHTML = content
 }
 
 function verifyCodeResume() {
